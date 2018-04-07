@@ -1,4 +1,3 @@
-# upload file to data.world (you'll need your own account)
 library(data.world)
 set_config(cfg_env(auth_token_var = "DW_API_TOKEN"))
 
@@ -7,7 +6,7 @@ library(tidyverse)
 # CSV file columns
 columns <- c("rikishi1", "odds1", "rikishi2", "odds2", "ts")
 
-# list CSV files that may contaon odds
+# list CSV files that may contain odds
 list.files(
 	path = "~/",
 	pattern = "[0-9]{6}\\.csv$",
